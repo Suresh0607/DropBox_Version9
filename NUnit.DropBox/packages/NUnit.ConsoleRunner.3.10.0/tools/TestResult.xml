@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Failed" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-07-17 02:05:31Z" end-time="2019-07-17 02:05:37Z" duration="7.305476">
+  <command-line><![CDATA[nunit3-console.exe  "C:\InsightsRetail\NUnit.InsightsRetail\NUnit.InsightsRetail\bin\Debug\NUnit.InsightsRetail.dll"]]></command-line>
+  <test-suite type="Assembly" id="0-1002" name="NUnit.InsightsRetail.dll" fullname="NUnit.InsightsRetail.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-07-17 02:05:32Z" end-time="2019-07-17 02:05:37Z" duration="6.473926" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17134.0" platform="Win32NT" cwd="C:\InsightsRetail\NUnit.InsightsRetail\packages\NUnit.ConsoleRunner.3.10.0\tools" machine-name="DESKTOP-TKFMPJ6" user="sures" user-domain="DESKTOP-TKFMPJ6" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\InsightsRetail\NUnit.InsightsRetail\packages\NUnit.ConsoleRunner.3.10.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="ParallelScope" value="All" />
+      <property name="_PID" value="6848" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1003" name="NUnit" fullname="NUnit" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-07-17 02:05:32Z" end-time="2019-07-17 02:05:37Z" duration="6.446481" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1004" name="InsightsRetail" fullname="NUnit.InsightsRetail" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-07-17 02:05:32Z" end-time="2019-07-17 02:05:37Z" duration="6.445854" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1005" name="FeatureFiles" fullname="NUnit.InsightsRetail.FeatureFiles" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-07-17 02:05:32Z" end-time="2019-07-17 02:05:37Z" duration="6.445742" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="0-1000" name="Feature2Feature" fullname="NUnit.InsightsRetail.FeatureFiles.Feature2Feature" classname="NUnit.InsightsRetail.FeatureFiles.Feature2Feature" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-07-17 02:05:32Z" end-time="2019-07-17 02:05:37Z" duration="6.441788" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="Feature2" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[-> Using app.config
+Execute BeforeTestRun- RegisterPages
+Execute BeforeTestRun- RegisterDriver
+]]></output>
+            <test-case id="0-1001" name="OfflineReport1" fullname="NUnit.InsightsRetail.FeatureFiles.Feature2Feature.OfflineReport1" methodname="OfflineReport1" classname="NUnit.InsightsRetail.FeatureFiles.Feature2Feature" runstate="Runnable" seed="1555921671" result="Failed" label="Error" start-time="2019-07-17 02:05:32Z" end-time="2019-07-17 02:05:37Z" duration="5.751619" asserts="0">
+              <properties>
+                <property name="Description" value="Offline Report 1" />
+                <property name="Category" value="ChromeBrowser" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                <stack-trace><![CDATA[   at NUnit.InsightsRetail.Login_Page.gotologinPage(String userName) in C:\InsightsRetail\NUnit.InsightsRetail\NUnit.InsightsRetail\Pages\Login_Page.cs:line 37
+   at NUnit.InsightsRetail.Steps.ReportSteps.GivenUserLogsIntoTheCEClientApplication(String userName) in C:\InsightsRetail\NUnit.InsightsRetail\NUnit.InsightsRetail\Steps\ReportSteps.cs:line 53
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at NUnit.InsightsRetail.FeatureFiles.Feature2Feature.ScenarioCleanup()
+   at NUnit.InsightsRetail.FeatureFiles.Feature2Feature.OfflineReport1() in C:\InsightsRetail\NUnit.InsightsRetail\NUnit.InsightsRetail\FeatureFiles\Feature2.feature:line 8]]></stack-trace>
+              </failure>
+              <output><![CDATA[Given user "qaautoinv10@yandex.com" logs into the CE Client application
+-> error: Object reference not set to an instance of an object.
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
